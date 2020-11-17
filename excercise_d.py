@@ -29,10 +29,16 @@ for number in numbers:
 #    
 #    So [11, 6, 4, 99, 7, 11] would have sum of 22
 numbers_total = 0
-bad_numbers = 0
+turn_off_count = 0
 for number in numbers:
     if number == 6:
-        bad_numbers += number
+        turn_off_count = 1
+    if turn_off_count == 0:
+        numbers_total += number
+    if number == 7:
+        turn_off_count = 0
+    
+    
 print(numbers_total)
 
 # 5. HARD! Print the sum of the numbers. 

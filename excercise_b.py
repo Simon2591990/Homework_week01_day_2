@@ -61,7 +61,7 @@ print(users["Erik"]["home_town"])
 # 3. Get the array of Erik's lottery numbers
 print(users["Avril"]["lottery_numbers"])
 # 4. Get the species of Avril's pet Monty
-print(users["Avril"]["pets"][1])
+print(users["Avril"]["pets"]["species"])
 # 5. Get the smallest of Erik's lottery numbers
 
 # 6. Return an array of Avril's lottery numbers that are even
