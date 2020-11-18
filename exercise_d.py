@@ -47,6 +47,18 @@ print(numbers_total)
 #    HINT - You will need to track the index throughout the loop.
 #
 #    So [5, 13, 2] would have sum of 5. 
+numbers_total = 0
+timer = 0
+
+for number in numbers:
+    if number == 13:
+        timer = 2
+    if timer == 0:
+        numbers_total += number
+    if timer > 0:
+        timer -= 1
+    
+print(numbers_total)
 
 
 
